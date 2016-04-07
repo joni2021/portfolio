@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+
+/*---------------------------FUENTES----------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC&subset=latin,latin-ext);
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext);
+
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700);
+/*---------------------------FIN FUENTES----------------------------*/
+
+*{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
+}
+
+
+/*---------------------------ESTILOS----------------------------*/
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.overflow-auto{
+    overflow: auto;
+}
+
+.bs-callout-danger{
+    border-left-color: #ce4844;
+}
+
+.bs-callout{
+    padding:20px;
+    margin:20px 0;
+    border-left:1px solid white;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout-danger h4{
+    color: #ce4844;
+}
+
+.bs-callout h4{
+    margin-top:0;
+    margin-bottom: 5px;
+}
+
+.img1 a,.img2 a{
+    display:block;
+}
+
+/*.img1,.img2{*/
+    /*width: 201px;*/
+    /*height: 201px;*/
+    /*margin:auto;*/
+    /*border-radius: 50%;*/
+    /*z-index: 100;*/
+/*}*/
+
+#img1,#img2, #img3{
+    /*border-radius: 50%;*/
+    width: 201px;
+    height: 201px;
+    position:absolute;
+    left:0;
+    right: 0;
+    margin:auto;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+#img1 img,#img1 div,.img1 img, .img1 div{
+    background-color: black;
+}
+
+#img1 a:hover img,#img2 a:hover img,.img1 a:hover img,.img2 a:hover img{
+    box-shadow: 0 0 15px 2px white;
+    -moz-box-shadow: 0 0 15px 2px white;
+    -webkit-box-shadow: 0 0 15px 2px white;
+}
+
+#img2 img,#img2 div,.img2 img,.img2 div{
+    background-color: white;
+}
+
+
+#img1 img,#img2 img, #img3 img,.img1 img,.img2 img, .img3 img{
+    border-radius: 50%
+}
+
+#img1 div,#img2 div,.img1 div,.img2 div{
+    border-radius:50%;
+    width:200px;
+    height:200px;
+}
+
+#quienSoy{
+    background: #A9C5D8;
+    /*background: rgba(255,228,186,.5);*/
+    padding: 15px;
+}
+
+
+.disenio{
+    font-family: 'Patrick Hand SC', cursive;
+    color:white;
+    text-align: center;
+
+}
+
+.disenio *{
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+.disenio h4,.programacion h4{
+    color:black;
+    text-align: center;
+    background: rgba(255,255,255,.2);
+    padding:5px;
+    border-radius: 15px;
+}
+
+.programacion h4{
+    background: rgba(169,197,216,.5);
+    color:#A9C5D8;
+}
+
+.disenio h4>small,.programacion h4>small{
+    color:white !important;
+    /*color:#4D4D4D !important;*/
+    /*float:right;*/
+}
+
+
+.programacion{
+    font-family: 'Ubuntu Mono';
+    color:white;
+    text-align: center;
+    /*background: #FFE4BA;*/
+}
+
+.programacion *{
+    font-family: 'Ubuntu Mono';
+}
+
+.programacion p{
+    font-size: 13px;
+}
+
+.disenio p{
+    font-size: 15px;
+}
+
+#segundo{
+    background: #E8BAAB;
+}
+
+#tercero{
+    background: #FBFFD6;
+}
+
+#cuarto{
+    background: #B0C494;
+}
+
+/*---------------------------FIN ESTILOS----------------------------*/
+
+
+
+/*---------------------------ESTILOS NUEVOS----------------------------*/
+
+#dis,#dis2{
+    background: #A9C5D8;
+}
+
+#prog,#prog2{
+    background: #000;
+}
+
+.top{
+    position:absolute;
+    left:0;
+    right: 0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    z-index: 100;
+
+}
+
+
+
+
+#opacity{
+    position:absolute;
+    background: rgba(0,0,0,.5);
+    z-index:200;
+    top:0;
+}
+
+
+#textoDisenio,#textoProgramacion{
+    position:absolute;
+    top:0;
+    bottom:0;
+    z-index:2222;
+    height:220px;
+    background: rgba(255,255,255,.7);
+    display:none;
+}
+
+#textoDisenio h1,#textoProgramacion h1{
+    font-size:3em;
+    text-decoration: underline;
+}
+
+#textoDisenio h4,#textoProgramacion h4{
+    font-size:2em;
+}
+
+
+/*---------------------------FIN ESTILOS---------------------------*/
+@media screen and (max-width: 767px) {
+    .top{
+        position: inherit;
+    }
+
+    #dis2,#prog2{
+        height: auto !important;
+        padding-bottom:15px;
+    }
+
+    .overflow-hidden{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+/*---------------------------FIN ESTILOS---------------------------*/
